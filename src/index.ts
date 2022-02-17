@@ -19,14 +19,14 @@ employees = [
 ]
 
 // Union
-let pid: string | number
+let pid: string | number // variable to hold more than 1 type
 
 pid = 22
-pid ='22'
+pid = '22'
 
-// Enum
+// Enum - allows us to define a set of named constants, numberic or string
 enum Direction1 {
-  Up,
+  Up, 
   Down,
   Left,
   Right
@@ -36,6 +36,9 @@ console.log(Direction1.Up) // 0
 console.log(Direction1.Down) // 1
 console.log(Direction1.Left) // 2
 console.log(Direction1.Right) // 3
+
+// can set a value too: Up = 1, then Down will be 2 and so on
+
 
 enum Direction2 {
   Up = 'Up',
@@ -57,3 +60,4 @@ const user: User = {
   id: 1,
   name: 'Cynthia'
 }
+
